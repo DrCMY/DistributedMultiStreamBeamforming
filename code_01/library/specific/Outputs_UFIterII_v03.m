@@ -105,7 +105,7 @@ closexlsxfiles  % Closing all excel files
 % Writing the header row in the excel file
 [excelfile1,excelfile2]=OutputExcelFiles_v02;
 Sheet=['MC' num2str(MonteCarlo) 'MCT' num2str(MonteCarloT)];
-Row1={'K','M', 'N', 'R',['Total #' newline 'of Ant.'],'Network', 'Tx dB', 'R dB','Tx-R dB','Alg.', ['Power' newline '(dB)'],['Power' newline '(dBm)'],['Av. Iter.' newline '(rounded)'],'Av. Iter.','Max. of Iters.','SINR',['SINR' newline '(dBm)'],['Total' newline 'Missed'],'Slow-Conv.','Non-Conv.','U Viol.', 'F Viol.',['Data Input' newline 'Location'],['Data Output' newline 'Location'],'Total Time'};
+Row1={'K','M', 'N', 'R',['Total #' newline 'of Ant.'],'Network', 'Tx dB', 'R dB','Tx-R dB','Alg.', ['Power' newline '(dB)'],['Power' newline '(dBm)'],['Av. Iter.' newline '(rounded)'],'Av. Iter.','Max. of Iters.','SINR',['SINR' newline '(dBm)'],['Total' newline 'Missed'],'Slow-Conv.','Non-Conv.','U Viol.', 'F Viol.',['Data Input' newline 'Location'],['Data Output' newline 'Location'],'Total Duration','Current Time'};
 xlswrite(excelfile1,Row1,Sheet,'A1');
 
 %%%%
