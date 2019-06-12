@@ -1,0 +1,9 @@
+function loaders=IncreaseLoaders_v01(K,R,M,N,loaders)
+KM=K*M;
+RN=R*N;
+TM=2*M;                  % Relay network operates in two time slots. Therefore, there is a receive beamforming vector for each time slot of the communication.
+loaders(2)=loaders(2)+RN;
+loaders(1)=loaders(1)+KM;
+loaders(3)=loaders(3)+M;
+loaders(4)=loaders(4)+RN;
+loaders(5)=loaders(5)+TM;
